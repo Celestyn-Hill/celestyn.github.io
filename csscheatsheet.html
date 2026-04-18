@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Celestyn's Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="csscheatsheet.js"></script> 
+    </head>
+    <body>
+        <div id="topbar">
+            <h1>Celestyn's Website</h1>
+
+            <div>
+                <ul>
+                    <li><a href="index.html">Main Page</a></li>
+                    <li><a href="csscheatsheet.html">Flex-Box Editor</a></li>
+                    <li><a href="htmlcheatsheet.html">HTML Cheat Sheet</a></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div id="cssSandbox">
+            <!-- div to put stuff in -->
+            <div id="sandbox">
+
+            </div>
+            <!-- div for using stuff -->
+            <div>
+                <!-- div for managing created divs -->
+                 <div>
+                    <h3>Create Item</h3>
+                    <button onclick="sandboxInput('createDiv')">Create Div</button>
+                    <button onclick="sandboxInput('deleteDiv')">Delete Div</button>
+                    <label for="color">Background Color</label><br>
+                    <input id="color" type="color">
+                 </div>
+
+                 <!-- flex-direction div broken and im too lazy to fix it rn-->
+                 <div>
+                    <h3>Flex-Direction</h3>
+                    <button onclick="flexDirection('1')">row</button>
+                    <button onclick="flexDirection('2')">column</button>
+                    <button onclick="flexDirection('3')">row-reverse</button>
+                    <button onclick="flexDirection('4')">column-reverse</button>
+                 </div>
+
+                 <!-- div for flex direction-->
+                  <div>
+                    <h3>Justify Content</h3>
+                    <button onclick="justifyContent('1')">flex-start</button>
+                    <button onclick="justifyContent('2')">flex-end</button>
+                    <button onclick="justifyContent('3')">center</button>
+                    <button onclick="justifyContent('4')">space-between</button>
+                    <button onclick="justifyContent('3')">space-around</button>
+                    <button onclick="justifyContent('3')">space-evenly</button>
+                  </div>
+                
+                  <!-- div for flex wrap -->
+                  <div>
+                    <h3>Flex-Wrap</h3>
+                    <button onclick="flexWrap('1')">nowrap</button>
+                    <button onclick="flexWrap('2')">wrap</button>
+                    <button onclick="flexWrap('3')">wrap-reverse</button>
+                  </div>
+
+                  <!-- align items -->
+                  <div>
+                    <h3>Align Item</h3>
+                    <button onclick="alignItem('1')">flex-start</button>
+                    <button onclick="alignItem('2')">flex-end</button>
+                    <button onclick="alignItem('3')">center</button>
+                    <button onclick="alignItem('4')">baseline</button>
+                    <button onclick="alignItem('5')">stretch</button>
+                  </div>
+
+                  <!-- edit div -->
+                  <div>
+                    <h3>Edit Item</h3>
+                    <input id="growSize" type="number" value="0">
+                    <button onclick="editDivs('1')">Set Grow</button>
+                    <input id="updateColor" type="color">
+                    <button onclick="editDivs('2')">Update Color</button>
+                  </div>
+
+                  <!-- Align self -->
+                    <div>
+                        <h3>Edit Item align-self</h3>
+                        <button onclick="alignSelf('1')">flex-start</button>
+                        <button onclick="alignSelf('2')">flex-end</button>
+                        <button onclick="alignSelf('3')">center</button>
+                        <button onclick="alignSelf('4')">baseline</button>
+                        <button onclick="alignSelf('5')">stretch</button>
+                   </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>CSS Cheat Sheet</p>
+        </div>
+    </body>
+</html>

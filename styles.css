@@ -1,22 +1,166 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*
+{
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
-.container {
+:root {
+    --accentColor: rgb(82, 42, 81);
+    --mainColor: rgb(30, 30, 30);
+}
+  
+
+body
+{
+    background-color: var(--accentColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div
+{
+    background-color: var(--mainColor);
+}
+
+/* top bar and footer stuff */
+
+#topbar
+{
+    background-color: var(--mainColor);
+}
+
+
+#topbar div ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 10vw;
+    right: 10vw;
+    top: 98vh;
+}
+
+/* stuff for the front page */
+#frontpage
+{
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 95vh;
+}
+
+#frontpage h2
+{
+    margin: 10px;
     text-align: center;
 }
 
-h1 {
-    color: red;
-    font-size: 36px;
+#frontpage h3
+{
+    margin: 10px;
 }
 
-p {
-    color: #666;
-    font-size: 18px;
+#frontpage h3:nth-of-type(even)
+{
+    text-align: end;
+}
+
+#frontpage p
+{
+    /* flex-grow: 1; */
+    margin: 10px;
+}
+
+#frontpage p:nth-of-type(even)
+{
+    text-align: base;
+}
+
+img
+{
+    float: right;
+    aspect-ratio: 16/9;
+    max-width: 20vw;
+    max-height: 20vh;
+    min-width: 240px;
+    min-height: 135px;
+}
+
+#lazyworkaround
+{
+    float: left;
+}
+
+/* sandbox stuff */
+#sandbox
+{
+    background-color: gray;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+#cssSandbox
+{
+    margin: 2vh 10vw;
+}
+
+#cssSandbox div div
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#cssSandbox div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input
+{
+    background-color: var(--mainColor);
+}
+
+button
+{
+    background-color: var(--mainColor);
+    border-color: black;
+}
+
+/* stuff for the html cheat sheet */
+
+#htmlcheatsheet
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 10vw;
+    height: 95vh;
+}
+
+
+#htmlcheatsheet ul li
+{
+    margin: 1vh;
+}
+
+th, td
+{
+    border-style: solid;
+    border-color: black;
 }
