@@ -153,6 +153,10 @@ button
     height: 95vh;
 }
 
+ul
+{
+    list-style-type: none;
+}
 
 #htmlcheatsheet ul li
 {
